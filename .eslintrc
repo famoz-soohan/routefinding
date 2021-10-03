@@ -1,0 +1,16 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "no-loops"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "no-console": 1,
+      "no-loops/no-loops": 2,
+      // 함수가 return 해야하는 것을 명시한다.
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    }
+  }
