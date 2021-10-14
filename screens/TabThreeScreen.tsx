@@ -1,20 +1,14 @@
-import * as React from 'react';
-import { StyleSheet } from 'react-native';
-import { Card } from 'react-native-elements';
+import React from 'react';
 
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import { StyleSheet } from 'react-native';
+
 import { RootTabScreenProps } from '../types';
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+export default function TabThreeScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <Card>
-        <Card.Title>테스트</Card.Title>
-        <Card.Divider />
-        테스트
-      </Card>
+      <Text style={styles.title}>Tab Three</Text>
     </View>
   );
 }
